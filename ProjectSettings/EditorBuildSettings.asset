@@ -4,5 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Eidrian/Scenes/Menu.unity
+    guid: 3fd34ffec1e6ce34fbb85380813a3859
+  - enabled: 1
+    path: Assets/Eidrian/Scenes/Test.unity
+    guid: b4412f359db09f94eb16e6126371f5fb
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
