@@ -30,8 +30,10 @@ public class PauseScrypt : MonoBehaviour
     }
     public void returnToMenu()
     {
-        SceneManager.LoadScene(0);
         //Destroy(gameManager);
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1.0f;
+        Cursor.lockState = CursorLockMode.None;
     }
 
 }
