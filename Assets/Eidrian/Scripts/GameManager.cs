@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public bool isPlaying = false;
     
     private void Awake()
     {
@@ -30,7 +31,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (isPlaying)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Debug.Log("3");
+        }
     }
     
     public void Pause(bool isPause)
@@ -45,11 +50,11 @@ public class GameManager : MonoBehaviour
         switch (p)
         {
             case true:
-
+                isPlaying = false;
                 disableGame();
                 break;
             case false:
-
+                isPlaying = true;
                 enableGame();
                 break;
         }

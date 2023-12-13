@@ -20,6 +20,7 @@ public class PauseScrypt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             isPause = !isPause;

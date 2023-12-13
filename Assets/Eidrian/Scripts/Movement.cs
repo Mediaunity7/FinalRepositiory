@@ -32,6 +32,7 @@ public class Movement : MonoBehaviour
   
     void Update()
     {
+        
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
        // Debug.Log(isGrounded);
